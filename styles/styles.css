@@ -6,12 +6,59 @@ body {
 header {
     background-color: lightgrey;
     display: flex; /* Creates a flexbox container */
+    flex-direction: column; /* displays items in columns, rather than rows*/
     align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
     justify-content: center;/* aligns all child elements in the header horizontally */
     height: 500px;/* designates the height of the header */
+    text-align: center; 
+}
+h2 {
+    font-size: 2em; /* Adjust size to match h1 */
+    font-weight: bold; /* Makes it bold like h1 */
 }
 
 /* NAV */
+nav {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Makes the list items align side-by-side */
+    gap: 20px; /* Adds space between the items */
+    padding: 0; /* Removes extra spacing */
+    margin: 0; /* Removes extra margin */
+    justify-content: space-around;
+    
+}
+/* Links style*/
+nav ul li a {
+    text-decoration: none; /* Removes the underline */
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px; /* Adds padding 10px from top and bottom 15px fromleft and right */
+    transition: 0.3s; /* Smooth hover effect */
+}
+nav ul li a:hover {
+    background-color: white; /* Makes the Background color turn white */
+    border-radius: 10px;/* Rounds the radius of the a Element */
+}
 
+/*homepage_main*/
+.homepage_main {
+    background-color: white;
+    display: flex; /* Creates a flexbox container */
+    flex-direction: column; /* displays items in columns, rather than rows*/
+    align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
+    justify-content: center;/* aligns all child elements in the header horizontally */
+    text-align: center; 
+}
+/*aboutme*/
+.aboutme {
+
+}
 
 /**/
