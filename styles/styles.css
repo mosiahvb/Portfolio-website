@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+}
+
+/*header*/ 
+header {
+    background-color: lightgrey;
+    display: flex; /* Creates a flexbox container */
+    align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
+    justify-content: center;/* aligns all child elements in the header horizontally */
+    height: 500px;/* designates the height of the header */
+}
+
+/* NAV */
+
+
+/**/
