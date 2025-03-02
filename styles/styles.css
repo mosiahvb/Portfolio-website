@@ -58,7 +58,8 @@ nav ul li a:hover {
 }
 /*aboutme*/
 .aboutme {
-
+    width: 600px;
+    font-size: larger;
 }
 
 /**/
