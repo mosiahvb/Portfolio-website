@@ -24,14 +24,16 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 20px;
 }
+
 nav ul {
     list-style: none; /* Removes bullet points */
     display: flex; /* Makes the list items align side-by-side */
     gap: 20px; /* Adds space between the items */
     padding: 0; /* Removes extra spacing */
     margin: 0; /* Removes extra margin */
-    justify-content: space-around;
+    justify-content: space-around; /* creating a draft between the NAV and the main*/
     
 }
 /* Links style*/
@@ -56,10 +58,54 @@ nav ul li a:hover {
     justify-content: center;/* aligns all child elements in the header horizontally */
     text-align: center; 
 }
-/*aboutme*/
-.aboutme {
-    width: 600px;
-    font-size: larger;
+
+/*aboutme_container*/
+.aboutme_container{
+    display: flex;
+    justify-content: space-between; /*creates even space Across the container*/
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/*aboutme*/
+.aboutme {
+    max-width: 600px; /* Limits the width for readability */
+}
+.aboutme p {
+    font-size: larger;
+    text-align: justify; /* Aligns both sides of the text for a clean look */
+}
+
+.skills, .hobbies {
+    background-color: lightgrey;
+    border-radius: 15px; /*roundes the border*/
+    width: 300px; 
+    padding: 10px; /*added space to the inside of the divs*/
+    max-height: 600px;
+}
+
+ul {
+    list-style-type: none; /*removes the styleing*/
+    padding: 0;
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 10px; /* create space between each li*/
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*project_container*/
+.project_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
 /**/
