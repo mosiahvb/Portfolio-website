@@ -82,8 +82,16 @@ nav ul li a:hover {
     border-radius: 15px; /*roundes the border*/
     width: 300px; 
     padding: 10px; /*added space to the inside of the divs*/
-    max-height: 600px;
+    max-height: 800px;
 }
+.hobbies h2 {
+    margin-bottom: 0;
+}
+
+.hobby p{
+    text-align: left;
+}
+
 
 ul {
     list-style-type: none; /*removes the styleing*/
@@ -98,7 +106,6 @@ li {
 .hobbies {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 /*project_container*/
@@ -107,5 +114,56 @@ li {
     justify-content: space-between;
     gap: 100px;
     align-items: center;
+    padding: 20px;
+}
+
+
+/* Individual project cards */
+.project_card {
+    width: 300px;
+    height: 300px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.project_card h2 {
+    background-color: black;
+    border-radius: 10px;
+    display: inline-block; /* Shrinks the background to the text size */
+    padding: 5px;
+    margin: 0 auto; /* Centers the element inside the parent */
+    
+}
+
+/* Assign background images */
+.project_card:nth-child(1) {
+    background-image: url('../images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');
+}
+
+.project_card:nth-child(2) {
+    background-image: url('../images/diana-polekhina-1ixT36dfuSQ-unsplash.jpg');
+}
+
+/* Button styling */
+.project_button {
+    padding: 10px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+
+.project_button:hover {
+    background-color: gray;
 }
 /**/
