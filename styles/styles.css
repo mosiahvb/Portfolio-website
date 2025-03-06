@@ -84,12 +84,19 @@ nav ul li a:hover {
     padding: 10px; /*added space to the inside of the divs*/
     max-height: 800px;
 }
+.hobbies {
+    display: flex;
+    flex-direction: column;
+}
+
 .hobbies h2 {
     margin-bottom: 0;
 }
 
 .hobby p{
     text-align: left;
+    font-size: medium;
+    
 }
 
 
@@ -102,12 +109,7 @@ li {
     font-size: 1.1em;
     margin-bottom: 10px; /* create space between each li*/
 }
-
-.hobbies {
-    display: flex;
-    flex-direction: column;
-}
-
+    
 /*project_container*/
 .project_container {
     display: flex;
