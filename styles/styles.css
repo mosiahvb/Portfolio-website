@@ -1,37 +1,44 @@
 body {
-    background-color: white;
+    background-color: #ecdfd3;
 }
 
 /*header*/ 
 header {
-    background-color: lightgrey;
+    background-color: #ecdfd3;
     display: flex; /* Creates a flexbox container */
     flex-direction: column; /* displays items in columns, rather than rows*/
     align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
     justify-content: center;/* aligns all child elements in the header horizontally */
-    height: 500px;/* designates the height of the header */
+    height: 250px;/* designates the height of the header */
     text-align: center; 
+    border: 5px solid #c2a98c;
+    border-radius: 5px;
 }
-h2 {
-    font-size: 2em; /* Adjust size to match h1 */
-    font-weight: bold; /* Makes it bold like h1 */
+header h1{
+    font-size: 4em;
+    margin-bottom: -5px;
+}
+header h2 {
+    font-size: 3em; /* Adjust size to match h1 */
 }
 
 /* NAV */
 nav {
-    background-color: gray;
+    background-color: #c2a98c;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 nav ul {
     list-style: none; /* Removes bullet points */
     display: flex; /* Makes the list items align side-by-side */
     gap: 20px; /* Adds space between the items */
-    padding: 0; /* Removes extra spacing */
+    padding: 10px; /* Removes extra spacing */
     margin: 0; /* Removes extra margin */
     justify-content: space-around; /* creating a draft between the NAV and the main*/
     
@@ -45,13 +52,13 @@ nav ul li a {
     transition: 0.3s; /* Smooth hover effect */
 }
 nav ul li a:hover {
-    background-color: white; /* Makes the Background color turn white */
+    background-color: #ecdfd3; /* Makes the Background color turn white */
     border-radius: 10px;/* Rounds the radius of the a Element */
 }
 
 /*homepage_main*/
 .homepage_main {
-    background-color: white;
+    background-color: #ecdfd3;
     display: flex; /* Creates a flexbox container */
     flex-direction: column; /* displays items in columns, rather than rows*/
     align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
@@ -78,7 +85,7 @@ nav ul li a:hover {
 }
 
 .skills, .hobbies {
-    background-color: lightgrey;
+    background-color: #c2a98c;
     border-radius: 15px; /*roundes the border*/
     width: 300px; 
     padding: 10px; /*added space to the inside of the divs*/
@@ -135,7 +142,8 @@ li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .project_card h2 {
-    background-color: black;
+    background-color: #c2a98c;
+    color: white;
     border-radius: 10px;
     display: inline-block; /* Shrinks the background to the text size */
     padding: 5px;
@@ -155,10 +163,9 @@ li {
 /* Button styling */
 .project_button {
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #ecdfd3;
     border: none;
     border-radius: 5px;
-    color: white;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
@@ -166,6 +173,7 @@ li {
 }
 
 .project_button:hover {
-    background-color: gray;
+    background-color: #c2a98c;
+    color: white;
 }
 /**/
