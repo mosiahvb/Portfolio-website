@@ -1,0 +1,34 @@
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* .journal-entries {
+    display: flex;
+    flex-direction: column;
+    
+}
+.journal-entry {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+} */
+
+.journal-entry {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.journal-entry h3 {
+    margin-bottom: 0.5rem;
+}
+
+.journal-entry ul, .journal-entry ol {
+    margin-left: 1.5rem;
+}

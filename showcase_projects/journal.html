@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website project</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/journal.css">
+</head>
+<body>
+    <header>
+        <h1>Mosiah Valdez-Bates</h1>
+        <h2>Portfolio</h2>
+        <img src="" alt="">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">homepage</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <div class="journal-entries">
+
+            <!-- <section class="journal-entry">
+                <h3>April 21, 2025</h3>
+                <h4>Today's Focus: Analyzing Network Traffic</h4>
+                <p><strong>Tools Used:</strong> Wireshark, TCPDump</p>
+                <p><strong>What I Did:</strong> Captured and analyzed a local packet stream to identify unusual traffic patterns and practiced filtering protocols like TCP/UDP. Also learned how to interpret SYN/ACK flags.</p>
+                <p><strong>Reflection:</strong> Realized the importance of filtering down to specific ports and IPs for speed. Plan to dive deeper into alert configuration in Suricata next.</p>
+            </section> -->
+
+            <section class="journal-entry">
+                <h3>Date: April 26, 2025</h3>
+                <p><strong>Entry:</strong> #1</p>
+
+                <p><strong>Description:</strong> Investigating Potential WordPress Plug-in Issue</p>
+
+                <p><strong>Tool(s) used:</strong> WordPress, Browser DevTools, Server Logs</p>
+
+                <p><strong>The 5 W's:</strong></p>
+                <ul>
+                    <li><strong>Who:</strong> Myself (Security Analyst)</li>
+                    <li><strong>What:</strong> Investigating potential issue with WordPress site due to plug-in conflict</li>
+                    <li><strong>Where:</strong> Company Website / WordPress Environment</li>
+                    <li><strong>When:</strong> April 26, 2025, 2:00 PM</li>
+                    <li><strong>Why:</strong> To resolve performance issues and prevent possible security vulnerabilities related to a WordPress plug-in conflict</li>
+                </ul>
+
+                <p><strong>Additional notes:</strong></p>
+                <ol>
+                    <li>Diagnostics Performed: - Ping Test: I used the ping command to check for network connectivity to the server, which confirmed that the server was reachable but the website was still down. This suggested that the issue wasn't network-related. - top Command: Running the top command on the server revealed that MySQL and Redis were consuming significant resources. This indicated that there might be a resource bottleneck caused by either the database or a plug-in. - df -h Command: I used the df -h command to check disk space usage and found that the root directory had 66% usage, which seemed acceptable, but it helped rule out disk space issues.</li>
+                    <li>Initial research indicated that certain WordPress plug-ins can cause site performance issues and errors.</li>
+                    <li>Notified my superior about the potential plug-in conflict affecting the WordPress site’s performance.</li>
+                    <li>Suggested further investigation into deactivating specific plug-ins to isolate the issue.</li>
+                    <li>Plan to verify logs for errors related to WordPress plug-ins and analyze resource consumption to pinpoint problematic plug-ins.</li>
+                </ol>
+            </section>
+
+
+
+            <section class="journal-entry">
+                <h3>Date: April 23, 2025</h3>
+                <p><strong>Entry:</strong> #1</p>
+        
+                <p><strong>Description:</strong> Investigating and responding to suspicious activity potentially linked to website performance issues.</p>
+        
+                <p><strong>Tool(s) used:</strong> AWS, Nginx logs, IP analysis tools, Linux CLI, manual log inspection.</p>
+        
+                <p><strong>The 5 W's:</strong></p>
+                <ul>
+                    <li><strong>Who:</strong> Multiple unidentified IP addresses, primarily associated with international hosting services—likely automated bots or scanners.</li>
+                    <li><strong>What:</strong> Suspicious and repeated web traffic from global IPs, leading to site instability and unexplained server behavior.</li>
+                    <li><strong>Where:</strong> On the production server hosting the website for the company I work for.</li>
+                    <li><strong>When:</strong> The issue was detected early morning around 5:20 AM on April 23, 2025.</li>
+                    <li><strong>Why:</strong> The event was triggered by a combination of frequent HTTP requests (some targeting suspicious endpoints) and a series of critical Nginx errors involving cache file handling, coinciding with the website’s downtime. These requests were likely part of a widespread automated scan targeting vulnerable web applications.</li>
+                </ul>
+        
+                <p><strong>Additional notes:</strong></p>
+                <ol>
+                    <li>Root Trigger: Sales and marketing lead noticed the website was down and flagged the issue for investigation. I began examining web server logs around the time the site went down. The timeline aligned with a sharp increase in traffic from persistent, globally distributed IPs.</li>
+                    <li>Response: Identified top offending IP addresses (e.g., 78.153.140.156, 1.14.7.100) for potential blocking. Confirmed requests targeting old ASP.NET and WordPress-specific endpoints—neither of which the site supports—indicating generic bot behavior. Recommended blocking repeated offenders via the firewall and updating server rules to ignore or rate-limit suspicious traffic.</li>
+                    <li>Next steps: Possibly implement reverse proxy filtering for legacy probing (ASP.NET, WordPress, etc.). Begin documenting IP threat intelligence and automate blacklist updates.</li>
+                </ol>
+            </section>
+
+            <section class="journal-entry">
+                <h3>Date: April 21, 2025 - THIS IS AN EXAMPLE DELETE WHEN DONE!!!</h3>
+                <p><strong>Entry:</strong> #1</p>
+        
+                <p><strong>Description:</strong> Analyzing Network Traffic</p>
+        
+                <p><strong>Tool(s) used:</strong> Wireshark, TCPDump</p>
+        
+                <p><strong>The 5 W's:</strong></p>
+                <ul>
+                    <li><strong>Who:</strong> Myself (cybersecurity student)</li>
+                    <li><strong>What:</strong> Capturing and analyzing local packet traffic</li>
+                    <li><strong>Where:</strong> Local network environment</li>
+                    <li><strong>When:</strong> April 21, 2025, 10:00 AM</li>
+                    <li><strong>Why:</strong> To practice identifying anomalies in TCP/UDP traffic and interpreting SYN/ACK flags for cybersecurity analysis</li>
+                </ul>
+        
+                <p><strong>Additional notes:</strong></p>
+                <ol>
+                    <li>Filtering by port and IP drastically improves packet review speed.</li>
+                    <li>Next step: Dive deeper into alert configuration using Suricata.</li>
+                </ol>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+</html>
