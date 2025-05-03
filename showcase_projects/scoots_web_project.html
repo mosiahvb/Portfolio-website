@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Aid Website Project </title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+</head>
+<body>
+    <header>
+        <h1>Mosiah Valdez-Bates</h1>
+        <h2>Portfolio</h2>
+        <img src="" alt="">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">homepage</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+          <header>
+            <h1>Mock Rental Car Website</h1>
+            <p class="subtitle"><strong>Modern Web Design Meets Real-World Use Case</strong></p>
+          </header>
+      
+          <section class="project-section">
+            <h2>What It Is</h2>
+            <p>This is a multi-page mock rental car website designed to simulate a real-world car rental experience. It includes a homepage, rentals listing, reservation form, and contact information. Users can browse available cars, check pricing, view pickup locations on a map, and even get real-time weather conditions from the OpenWeatherMap API. The website presents a polished UI experience while working entirely with mock data.</p>
+          </section>
+      
+          <section class="project-section">
+            <h2>Why I Built It</h2>
+            <p>I created this website to practice integrating multiple front-end skills into a cohesive project. The idea of building a real-world business website — one that could serve a customer and help them reserve a vehicle — felt like a great way to build confidence with responsive design, APIs, and JavaScript-driven content. I also wanted to experiment with real-time data (like weather) to make the project more dynamic and engaging.</p>
+          </section>
+      
+          <section class="project-section">
+            <h2>How I Built It</h2>
+            <p>
+              This site uses HTML for structure, CSS for styling, and JavaScript to dynamically load vehicle data from local JSON files. Car details like type, features, price, and image are inserted into the DOM with JavaScript on the Rentals page. The Contact and Reservation pages include forms and embedded tools for location and communication.
+            </p>
+            <p>
+              I used the OpenWeatherMap API to fetch current weather information for the business’s main location, which updates automatically on page load. A custom Google Map embed displays two fictional rental office locations.
+            </p>
+            <ul>
+              <li><strong>Home Page:</strong> Welcome banner, brief intro, weather widget.</li>
+              <li><strong>Rentals Page:</strong> Dynamically loaded car listings with pricing.</li>
+              <li><strong>Reservations Page:</strong> Simple form with date, time, and vehicle options.</li>
+              <li><strong>Contact Page:</strong> Location map and contact details.</li>
+            </ul>
+          </section>
+      
+          <section class="project-section">
+            <h2>Challenges I Faced</h2>
+            <p>
+              One of the more difficult parts of this project was working with asynchronous JavaScript. Pulling weather data from the OpenWeatherMap API and handling edge cases like connection errors required trial and error.
+            </p>
+            <p>Other challenges and takeaways:</p>
+            <ul>
+              <li><strong>Dynamic DOM Insertion:</strong> I learned how to iterate over JSON and cleanly insert cards into the DOM using templates.</li>
+              <li><strong>Mobile Responsiveness:</strong> Making the Rentals layout look good on mobile required lots of CSS tweaking and media queries.</li>
+              <li><strong>Form Validation:</strong> I added basic HTML validation but realized I’d like to add more logic-driven form handling in the future.</li>
+            </ul>
+          </section>
+      
+          <section class="project-section">
+            <h2>Tools & Tech Used</h2>
+            <ul class="tech-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>JSON</li>
+              <li>OpenWeatherMap API</li>
+              <li>Google Maps Embed</li>
+            </ul>
+          </section>
+      
+          <section class="project-section">
+            <h2>What I'd Do Differently</h2>
+            <p>
+              As with all projects, I found several things I would improve next time:
+            </p>
+            <ul>
+              <li><strong>1:</strong> Add filtering and sorting features for rentals (e.g., by price or car size).</li>
+              <li><strong>2:</strong> Integrate a backend service like Firebase to support live data instead of local JSON.</li>
+              <li><strong>3:</strong> Build a more advanced weather widget that responds to user-selected branch locations.</li>
+              <li><strong>4:</strong> Improve accessibility features such as ARIA labels and keyboard navigation.</li>
+            </ul>
+            <p>
+              This project helped me practice combining UI, data, and responsiveness into a single experience. It was a great step in applying design thinking to web development.
+            </p>
+          </section>
+      
+          <section class="project-section">
+            <h2>Project Walkthrough</h2>
+            <div class="video-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
+                frameborder="0" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </section>
+      
+          <section class="project-section">
+            <h2>View the Website</h2>
+            <a class="github-link" href="https://mosiahvb.github.io/Mark-rental-car-scoots-/home" target="_blank">Visit Website</a>
+          </section>
+      
+          <section class="project-section">
+            <h2>View the Code</h2>
+            <a class="github-link" href="https://github.com/mosiahvb/Mark-rental-car-scoots-" target="_blank">View on GitHub</a>
+          </section>
+        </div>
+      </main>
+</body>
+</html>
