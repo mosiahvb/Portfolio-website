@@ -55,6 +55,12 @@ header h1 {
     text-align: justify;
     color: #333;
 }
+/* Fix word spacing issue on small screens */
+@media (max-width: 630px) {
+    .project-section p {
+        text-align: left; /* Or 'center' if you prefer */
+    }
+}
 
 /* Tech List */
 .tech-list {

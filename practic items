@@ -1,0 +1,207 @@
+<div class="aboutme_container">
+
+            <section class="skills">
+                 <!--add contact -->
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Critical Thinking</li>
+                    <li>Conflict Resolution</li>
+                    <li>Sales</li>
+                    <li>Leadership</li>
+                    <li>Team Collaboration</li>
+                </ul>
+
+                <h2>Hard Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Odoo</li>
+                    <li>HTML, CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>GitHub</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+
+            <section class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Mosiah Valdez-Bates. I am a husband, father, and a recent graduate with a Bachelor of Science in Software Engineering. As an aspiring cybersecurity professional, I bring a unique blend of technical expertise, leadership, and adaptability.</p>
+                <p>My diverse background—living in eight states, serving a two-year mission in Nevada, and working in sales and customer relations—has sharpened my ability to build trust, communicate effectively, and solve problems. I am known for being strong, kind, and resourceful, with a talent for learning quickly from mistakes and thinking outside the box to find efficient solutions. Leading teams, whether in Boy Scout troops, sports, or sales, has taught me the power of empathy, persistence, and collaboration.</p>
+                <p>What sets me apart is my keen awareness of how actions impact others, my ability to foster collaboration by putting people at ease, and my sharp eye for patterns and abnormalities—whether in code, conversations, or challenges. I am driven by a desire to safeguard others, contributing to national security by developing innovative cybersecurity solutions. My ultimate goal is to work in national security, using my technical skills to protect and defend critical systems.</p>
+                <p>With a strong determination to understand and develop technology and a natural ability to lead and adapt, I am ready to make a meaningful impact in the cybersecurity field and look forward to the opportunities ahead.</p>
+                <p></p>
+                <p></p>
+            </section>
+
+            <section class="hobbies">
+                <!--add contact -->
+                <h2>Hobbies</h2>
+
+                <div class="hobby">
+                    <h3>Meshtastic</h3>
+                    <p>An open-source alternative communication platform using LoRa radio frequencies for text messaging — a fun way to explore off-grid communication.</p>
+                </div>
+
+                <div class="hobby">
+                    <h3>Weightlifting</h3>
+                    <p>What started as high school sports training became a therapeutic outlet, helping me manage stress, push past limits, and grow both physically and mentally.</p>
+                </div>
+
+                <div class="hobby">
+                    <h3>First responder skills</h3>
+                    <p>Growing up surrounded by medical professionals inspired me to learn first aid and emergency care, fueling my passion for being a resource to help others.</p>
+                </div>
+            </section>
+        </div>
+
+
+
+        body {
+            background-color: #ecdfd3;
+        }
+        
+        /*header*/ 
+        header {
+            background-color: #ecdfd3;
+            display: flex; /* Creates a flexbox container */
+            flex-direction: column; /* displays items in columns, rather than rows*/
+            align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
+            justify-content: center;/* aligns all child elements in the header horizontally */
+            height: 250px;/* designates the height of the header */
+            text-align: center; 
+            border: 5px solid #c2a98c;
+            border-radius: 5px;
+        }
+        header h1{
+            font-size: 4em;
+            margin-bottom: -5px;
+        }
+        header h2 {
+            font-size: 3em; /* Adjust size to match h1 */
+        }
+        
+        /* NAV */
+        nav {
+            background-color: #c2a98c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        nav ul {
+            list-style: none; /* Removes bullet points */
+            display: flex; /* Makes the list items align side-by-side */
+            gap: 20px; /* Adds space between the items */
+            padding: 10px; /* Removes extra spacing */
+            margin: 0; /* Removes extra margin */
+            justify-content: space-around; /* creating a draft between the NAV and the main*/
+            
+        }
+        /* Links style*/
+        nav ul li a {
+            text-decoration: none; /* Removes the underline */
+            color: black;
+            font-size: 20px;
+            padding: 10px 15px; /* Adds padding 10px from top and bottom 15px fromleft and right */
+            transition: 0.3s; /* Smooth hover effect */
+        }
+        nav ul li a:hover {
+            background-color: #ecdfd3; /* Makes the Background color turn white */
+            border-radius: 10px;/* Rounds the radius of the a Element */
+        }
+        
+        /*homepage_main*/
+        .homepage_main {
+            background-color: #ecdfd3;
+            display: flex; /* Creates a flexbox container */
+            flex-direction: column; /* displays items in columns, rather than rows*/
+            align-items: center; /* Lines all items inside of the header (Child elements) Vertically */
+            justify-content: center;/* aligns all child elements in the header horizontally */
+            text-align: center; 
+        }
+        
+        /*aboutme_container*/
+        .aboutme_container{
+            display: flex;
+            justify-content: space-between; /*creates even space Across the container*/
+            gap: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /*aboutme*/
+        .aboutme {
+            max-width: 750px; /* Limits the width for readability */
+        }
+        .aboutme p {
+            font-size: larger;
+            text-align: justify; /* Aligns both sides of the text for a clean look */
+        }
+        
+        
+            
+        /*project_container*/
+        .project_container {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        
+        /* Individual project cards */
+        .project_card {
+            width: 300px;
+            height: 300px; /* Adjust height as needed */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .project_card h2 {
+            background-color: #c2a98c;
+            color: white;
+            border-radius: 10px;
+            display: inline-block; /* Shrinks the background to the text size */
+            padding: 5px;
+            margin: 0 auto; /* Centers the element inside the parent */
+            
+        }
+        
+        /* Assign background images */
+        .project_card:nth-child(1) {
+            background-image: url('../images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');
+        }
+        
+        .project_card:nth-child(2) {
+            background-image: url('../images/diana-polekhina-1ixT36dfuSQ-unsplash.jpg');
+        }
+        
+        /* Button styling */
+        .project_button {
+            padding: 10px;
+            background-color: #ecdfd3;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+        }
+        
+        .project_button:hover {
+            background-color: #c2a98c;
+            color: white;
+        }
+        /**/
