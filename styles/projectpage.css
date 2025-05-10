@@ -1,6 +1,5 @@
 body {
     background-color: #ecdfd3;
-    font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -50,11 +49,15 @@ header h1 {
 }
 
 .project-section p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.6;
     text-align: justify;
     color: #333;
 }
+.project-section li {
+    font-size: 1.2em;
+}
+
 /* Fix word spacing issue on small screens */
 @media (max-width: 630px) {
     .project-section p {

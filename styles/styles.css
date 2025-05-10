@@ -25,6 +25,7 @@ header h2 {
     font-size: clamp(1.5rem, 4vw, 3em);
 }
 
+
 /* If using an image in the header */
 header img {
     max-width: 100px;

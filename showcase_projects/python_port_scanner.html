@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+</head>
+<body>
+    <header>
+        <h1>Mosiah Valdez-Bates</h1>
+        <h2>Portfolio</h2>
+        <img src="" alt="">
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_me.html">About Me</a></li>
+      </ul>
+  </nav>
+
+    <main>
+        <div class="container">
+          <header>
+            <h1>Port Scanner</h1>
+            <p class="subtitle">A Python-based CLI tool for scanning open ports and vulnerabilities using Nmap and the NVD API</p>
+          </header>
+        
+          <section class="project-section">
+            <h2>What It Is</h2>
+            <p>
+              This is a command-line Python tool that performs network reconnaissance on a given domain or IP address. It resolves domain names, scans open ports with <code>nmap</code>, identifies service types and versions, and queries the National Vulnerability Database (NVD) to find related CVEs (Common Vulnerabilities and Exposures). It outputs all results to the terminal, helping users analyze and understand potential risks.
+            </p>
+            <p>
+              The tool is intended for internal network auditing and educational use, giving users a better understanding of how attackers assess vulnerabilities.
+            </p>
+          </section>
+        
+          <section class="project-section">
+            <h2>Why I Built It</h2>
+            <p>
+              I created this project to deepen my understanding of cybersecurity—particularly how attackers identify weaknesses in a network. It helped me:
+            </p>
+            <ul>
+              <li>Scan and audit my home and work networks for vulnerabilities</li>
+              <li>Learn how to automate security scanning with Python</li>
+              <li>Use tools like <code>nmap</code> and APIs from official vulnerability databases</li>
+              <li>Improve my ability to identify potential risks in real-world systems</li>
+            </ul>
+          </section>
+        
+          <section class="project-section">
+            <h2>How I Built It</h2>
+            <p>
+              The project uses several Python libraries and system tools to perform its operations:
+            </p>
+            <ul>
+              <li><strong>Python</strong> for the overall logic and automation</li>
+              <li><strong>Socket</strong> for DNS resolution and basic IP handling</li>
+              <li><strong>python-nmap</strong> to interface with the Nmap network scanning tool</li>
+              <li><strong>Requests</strong> to make HTTP calls to the National Vulnerability Database (NVD)</li>
+              <li><strong>OS</strong> to securely access environment variables such as the NVD API key stored in a <code>.env</code> file</li>
+            </ul>
+            <p><strong>Workflow:</strong></p>
+            <ol>
+              <li>User enters a domain or IP address</li>
+              <li>Tool resolves the domain to an IP (if needed)</li>
+              <li><code>nmap</code> scans the IP for open ports</li>
+              <li>Service names and versions are extracted</li>
+              <li>Queries are made to the NVD API for known vulnerabilities</li>
+              <li>Results are displayed to the terminal</li>
+            </ol>
+          </section>
+        
+          <section class="project-section">
+            <h2>Challenges I Faced</h2>
+            <ul>
+              <li><strong>Choosing a scanning method:</strong> I initially considered writing my own port scanner but opted for <code>nmap</code> due to its performance and reliability.</li>
+              <li><strong>Parsing output:</strong> Making sense of <code>nmap</code> output required carefully handling and interpreting its structured results.</li>
+              <li><strong>Working with the NVD API:</strong> Matching port information with CVEs wasn't always straightforward due to inconsistent naming and API rate limits.</li>
+              <li><strong>Securing the API key:</strong> I used a <code>.env</code> file and Python's <code>os</code> module to securely store and retrieve the key.</li>
+            </ul>
+          </section>
+        
+          <section class="project-section">
+            <h2>Tools & Tech Used</h2>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>Socket</li>
+              <li>Nmap / python-nmap</li>
+              <li>Requests</li>
+              <li>OS</li>
+              <li>.env for API key</li>
+              <li>National Vulnerability Database API</li>
+            </ul>
+          </section>
+        
+          <section class="project-section">
+            <h2>What I'd Do Differently</h2>
+            <ul>
+              <li>Add a user-friendly GUI using PyQt</li>
+              <li>Implement local storage with SQLite to track scan history</li>
+              <li>Provide export options like CSV or JSON for results</li>
+              <li>Improve error handling and implement API backoff strategies</li>
+              <li>Package the project as a cross-platform desktop application</li>
+            </ul>
+          </section>
+        
+          <section class="project-section">
+            <h2>Project Walkthrough</h2>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </section>
+        
+          <section class="project-section">
+            <h2>View the Code</h2>
+            <a class="github-link" href="https://github.com/mosiahvb/port_scanner" target="_blank">View on GitHub</a>
+          </section>
+        </div>
+      
+
+        <footer>
+          <p>&copy; 2025 | Mosiah Valdez-Bates | USA 
+          <p><a href="https://www.linkedin.com/in/mosiahvaldez-84588a1a5" target="_blank" rel="noopener"><img src="../images/linkedin.png" alt="Linkedin logo and link" width="25px" height="25px" loading="lazy"></a> </p>
+        </footer>
+
+    </main>
+</body>
+</html>
