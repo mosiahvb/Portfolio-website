@@ -29,6 +29,33 @@
 
         <div class="journal-entries">
 
+            <section class="journal-entry">
+                <h3>Date: May 23, 2025</h3>
+                <p><strong>Entry:</strong> #3</p>
+            
+                <p><strong>Description:</strong> TLS Certificate Expiration and FreePBX Security Risk Assessment</p>
+            
+                <p><strong>Tool(s) used:</strong> Wireshark, Web Browser (Certificate Viewer), Terminal</p>
+            
+                <p><strong>The 5 W's:</strong></p>
+                <ul>
+                    <li><strong>Who:</strong> Myself (Security Analyst), Marketing/Sales Manager, CEO</li>
+                    <li><strong>What:</strong> Investigated a "Not Secure" warning on the FreePBX admin portal, which led to discovery of an expired self-signed TLS certificate</li>
+                    <li><strong>Where:</strong> Internal VoIP FreePBX Admin Portal hosted on Vultr</li>
+                    <li><strong>When:</strong> May 23, 2025, 8:15 AM–11:00 AM</li>
+                    <li><strong>Why:</strong> To assess the risk of credential interception due to the use of an expired and untrusted certificate</li>
+                </ul>
+            
+                <p><strong>Additional notes:</strong></p>
+                <ol>
+                    <li>Incident began when the Marketing and Sales Manager noticed the browser flagging the FreePBX login page as "Not Secure" and reported it to the CEO.</li>
+                    <li>Conducted a packet capture using Wireshark, filtered by IP, and analyzed TLS handshake and Application Data traffic.</li>
+                    <li>Confirmed the FreePBX server was using an expired, self-signed certificate that could allow man-in-the-middle (MitM) attacks if a user bypassed browser warnings.</li>
+                    <li>Captured and documented the TLS Application Data packet that carried the encrypted login submission, demonstrating encryption but lack of trust in the cert.</li>
+                    <li>Recommended registering a domain name, implementing Let’s Encrypt for a valid SSL certificate, redirecting HTTP to HTTPS, and limiting admin access to trusted IPs or VPN.</li>
+                </ol>
+            </section>
+            
 
             <section class="journal-entry">
                 <h3>Date: April 26, 2025</h3>
