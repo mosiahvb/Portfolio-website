@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Home Lab</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+</head>
+<body>
+    <header>
+        <h1>Mosiah Valdez-Bates</h1>
+        <h2>Portfolio</h2>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_me.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+          <header>
+            <h1>Cybersecurity Home Lab</h1>
+            <p class="subtitle">A virtualized enterprise-style lab built in Azure to simulate real-world attack and defense scenarios.</p>
+          </header>
+        
+          <section class="project-section">
+            <h2>What It Is</h2>
+            <p>
+              This project is a custom-built cybersecurity home lab designed to replicate a real-world IT environment for hands-on practice with both offensive (red team) and defensive (blue team) security tasks. The lab includes:
+            </p>
+            <ul>
+              <li>Windows Server 2022 Domain Controller (Active Directory, GPOs, user/group management)</li>
+              <li>Windows 11 Client workstation joined to the domain</li>
+              <li>Ubuntu Server for blue team monitoring and log analysis</li>
+              <li>Red team attacker VM (Ubuntu/Kali Linux) for penetration testing exercises</li>
+              <li>Centralized logging and monitoring with Splunk</li>
+            </ul>
+            <p>
+              The environment is designed to simulate corporate network operations and security monitoring workflows.
+            </p>
+
+            <img class="netmap" src="../images/networkmap.jpg" alt="Home lab network diagram">
+          </section>
+        
+          <section class="project-section">
+            <h2>Why I Built It</h2>
+            <p>
+              I created this home lab to:
+            </p>
+            <ul>
+              <li>Gain hands-on experience with Active Directory, Group Policies, and enterprise-like setups</li>
+              <li>Practice real-world red vs. blue team exercises</li>
+              <li>Learn how to set up intrusion detection and log management using tools like Snort and Splunk</li>
+              <li>Simulate and analyze cyberattacks in a safe environment</li>
+              <li>Enhance my cybersecurity portfolio with practical, demonstrable skills</li>
+            </ul>
+            <p>
+              This lab helps me bridge the gap between theory and real-world security operations.
+            </p>
+          </section>
+        
+          <section class="project-section">
+            <h2>How I Built It</h2>
+            <p>
+              Technologies and tools used:
+            </p>
+            <ul>
+              <li><strong>Microsoft Azure</strong> for hosting virtual machines and networks</li>
+              <li><strong>Windows Server 2022 + Active Directory</strong> for domain control</li>
+              <li><strong>Windows 11</strong> as the primary user workstation</li>
+              <li><strong>Ubuntu Server</strong> with Splunk, Snort v2, Auditd, Rsyslog, and Wireshark</li>
+              <li><strong>Kali Linux/Ubuntu</strong> as the red team attack machine</li>
+            </ul>
+            <p><strong>Workflow Overview:</strong></p>
+            <ol>
+              <li>Set up a virtual network (cyberlab-vnet) in Azure</li>
+              <li>Deployed and configured Windows Server 2022 as a domain controller with users and groups</li>
+              <li>Joined the Windows 11 client to the domain and applied Group Policies</li>
+              <li>Installed and configured Splunk Universal Forwarders to forward logs to the Ubuntu blue team server</li>
+              <li>Configured Snort for intrusion detection and Wireshark for network traffic analysis</li>
+              <li>Created red team attack scenarios from the Kali/Ubuntu attacker VM</li>
+            </ol>
+          </section>
+        
+          <section class="project-section">
+            <h2>Labs Conducted in the Home Lab</h2>
+          
+            <div class="lab-entry">
+              <button class="lab-toggle">🔐 Password Cracking & Audit Review</button>
+              <div class="lab-content">
+                <p><strong>Goal:</strong> Test password hash strength and audit logging capabilities in the Windows domain environment.</p>
+                <p><strong>Tools Used:</strong> John the Ripper, Auditd, Event Viewer, rockyou.txt</p>
+                <p><strong>Summary:</strong> Extracted NT hashes from the domain controller, launched a dictionary attack, and monitored authentication attempts through Splunk and audit logs.</p>
+                <p><strong>Outcome:</strong> Successfully cracked weak passwords and documented policy improvement suggestions.</p>
+              </div>
+            </div>
+          
+            <!-- Repeat more lab-entry blocks here -->
+          </section>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const labToggles = document.querySelectorAll('.lab-toggle');
+                labToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    toggle.classList.toggle('active');
+                    const content = toggle.nextElementSibling;
+                    if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    } else {
+                    content.style.display = 'block';
+                    }
+                });
+                });
+            });
+          </script>
+          
+          <style>
+            /* Labs Section Styles */
+            .lab-entry {
+            margin-bottom: 1.5rem;
+            border: 2px solid #c2a98c;
+            border-radius: 8px;
+            background-color: #fff8f0;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+            }
+
+            .lab-toggle {
+            background-color: #c2a98c;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            width: 100%;
+            text-align: left;
+            padding: 12px 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
+
+            .lab-toggle:hover,
+            .lab-toggle.active {
+            background-color: #a8886c;
+            }
+
+            .lab-content {
+            display: none;
+            padding: 16px;
+            background-color: #fff8f0;
+            border-top: 1px solid #c2a98c;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            }
+
+            .lab-content p {
+            margin-bottom: 1em;
+            }
+          </style>
+        
+
+        </div>
+        <footer>
+          <p>&copy; 2025 | Mosiah Valdez-Bates | USA</p>
+          <p>
+            <a href="https://www.linkedin.com/in/mosiahvaldez-84588a1a5" target="_blank" rel="noopener">
+              <img src="../images/linkedin.png" alt="Linkedin logo and link" width="25px" height="25px" loading="lazy">
+            </a>
+          </p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Overhaul Project</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+</head>
+<body>
+    <header>
+        <h1>Mosiah Valdez-Bates</h1>
+        <h2>Portfolio</h2>
+        <img src="" alt="">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_me.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+          <header>
+            <h1>IT Infrastructure Overhaul</h1>
+            <p class="subtitle">A full infrastructure rebuild conducted for an engineering & manufacturing firm preparing for government contract readiness.</p>
+          </header>
+
+          <section class="project-section">
+            <h2>Project overview</h2>
+            <p>This project involved working alongside a Microsoft MVP to evaluate, rebuild, and secure the IT infrastructure of an engineering and manufacturing company that designs and fabricates CNC parts across various industries. The company was preparing for future government contract work, which necessitated higher standards of reliability, network hygiene, and security compliance.</p>
+
+            <div class="img_con">
+              <img src="../images/IMG_7495.jpg" alt="server room before" loading="lazy" class="equal-img">
+              <img src="../images/IMG_7584.jpg" alt="server room aftre" loading="lazy" class="equal-img">
+            </div>
+
+            <h3>Scope & Environment</h3>
+            <ul>
+              <li>Employees: 15–20</li>
+              <li>Devices: 115–130 (including CNC machinery and robotic equipment)</li>
+              <li>Facilities: 7 buildings total (hands-on work in 5)</li>
+              <li>Primary OS: Windows 10 (with a few Windows 11 upgrades in planning), Windows Server 2016</li>
+            </ul>
+
+            <h3>Assessment & Planning</h3>
+            <ul>
+                <li>Conducted full walkthroughs across five buildings, identifying all networked devices and legacy infrastructure.</li>
+                <li>Used port scanners, domain controller services, and manual tracing to audit the existing flat network and undocumented device locations.</li>
+                <li>Identified dual ISP connections—one non-functional—and reconfigured both into a functioning redundant failover setup.</li>
+            </ul>
+
+            <h3>Server & Endpoint Repair</h3>
+            <ul>
+                <li>Diagnosed and repaired a total of three hard drive failures: two in backup servers containing intellectual property and one in a critical workstation.</li>
+                <li>Planned and initiated migration strategy from Windows 10 to Windows 11 for eligible machines.</li>
+                <li>Performed diagnostic repairs and updates across multiple Windows systems.</li>
+            </ul>
+
+            <h3>Server Room Rebuild</h3>
+            <ul>
+                <li>Completely dismantled the existing server room infrastructure and installed a lockable server rack.</li>
+                <li>Replaced outdated hardware with Ubiquiti switches and routers.</li>
+                <li>Configured new firewalls, terminated all Cat5/Cat6 cables, and implemented VLANs to segment the network into secure zones: Separate engineering VLAN to protect intellectual property. Isolated guest Wi-Fi with no internal access. Segregated subnets across multiple buildings.</li>
+            </ul>
+
+            <h3>Security Improvements</h3>
+            <ul>
+                <li>Removed unnecessary exposed services that posed external security risks.</li>
+                <li>Hardened firewall rules and locked down internal communications.</li>
+                <li>Decommissioned access paths that allowed lateral movement between segments in the flat network.</li>
+            </ul>
+
+            <h3>Surveillance System</h3>
+            <ul>
+                <li>Installed and configured security camera systems across four buildings, including NVR setup and live recording feeds.</li>
+            </ul>
+
+          </section>
+
+
+          <section class="project-section">
+            <h2>Collaboration & Learning</h2>
+            <p>
+                Throughout the process, I collaborated closely with a Microsoft MVP, taking on delegated tasks independently while receiving mentorship and technical guidance. One of the most valuable lessons I gained was the importance of asking precise questions—even when it meant appearing unsure—to truly understand every layer of a system's design and flaws.
+            </p>
+          </section>
+
+          <section class="project-section">
+            <h2>Results</h2>
+            <ul>
+              <li>The company now operates on a secure, segmented network with documented failover internet access and improved visibility into all devices.</li>
+              <li>The infrastructure is significantly more prepared for future government compliance requirements and scalable improvements.</li>
+              <li>A complete network diagram and change log were delivered, with scheduled maintenance plans under development.</li>
+            </ul>
+          </section>
+
+
+        <footer>
+          <p>&copy; 2025 | Mosiah Valdez-Bates | USA</p>
+          <p>
+            <a href="https://www.linkedin.com/in/mosiahvaldez-84588a1a5" target="_blank" rel="noopener">
+              <img src="../images/linkedin.png" alt="Linkedin logo and link" width="25px" height="25px" loading="lazy">
+            </a>
+          </p>
+        </footer>
+    </main>
+</body>
+</html>

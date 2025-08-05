@@ -132,3 +132,32 @@ header h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     flex: 1 1 200px;
 }
+
+.netmap {
+    width: 100%;
+}
+
+.img_con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .equal-img {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 500px; /* Set the same height for both */
+    object-fit: cover; /* This crops to fill the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .equal-img {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
